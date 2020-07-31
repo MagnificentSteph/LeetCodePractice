@@ -1,0 +1,24 @@
+{
+  "name": "LeetCodePractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnificentSteph/LeetCodePractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnificentSteph/LeetCodePractice/issues"
+  },
+  "homepage": "https://github.com/MagnificentSteph/LeetCodePractice#readme"
+}
