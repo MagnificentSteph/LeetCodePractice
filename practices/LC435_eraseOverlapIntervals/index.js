@@ -1,27 +1,22 @@
-const eraseOverlapIntervals = intervals => {
-  if (intervals.length === 0) return 0;
-
-  let count = 0
-  intervals.sort(function(a,b){return a[0]-b[0]});
-
-  let end = intervals[0][1];
-
-  for(let i = 1; i < intervals.length; i++){
-    const interval = intervals[i];
-    const intervalStart = intervals[0];
-    const intervalEnd = intervals[1];
-
-    if (intervalStart < end){
-      count ++
-      end = Math.min(intervalEnd, end);
+/**
+ * @param {number} n
+ * @return {string[]}
+ */
+var fizzBuzz = function(n) {
+    var result = [];
+    for(count = 1; count <= n; count++){
+      if( count % 15 === 0){
+        result.push("FizzBuzz")
+      }
+      else if( count % 5 === 0){
+        result.push("Buzz")
+      }
+      else if( count % 3 === 0){
+        result.push("Fizz")
+      }
+      else {
+        result.push(count.toString())
+      }
     }
-    else{
-      end = intervalEnd
-    }
-
-  }
-  return count;
-
+    return result;
 };
-
-module.exports = eraseOverlapIntervals;
